@@ -1,0 +1,40 @@
+
+/* 固定商务通 */
+
+.fixed_swt{
+	display:none;
+	width: 60px;
+	position:fixed;
+	right:0;
+	top:50%;
+	margin-top:-240px;
+	z-index:99999;
+	/* 兼容IE6 */
+	_margin-right:0;
+	_margin-top:-220px;
+	_position:absolute;
+	_right:0;_top:expression(eval(document.documentElement.clientHeight/2+document.documentElement.scrollTop))
+	/* 兼容IE6 END */
+}
+.fixed_swt ul li{cursor:pointer;cursor:pointer;color:#fff;float:left;display:inline;width:100%;position:relative;}
+.fixed_swt ul li a{transition:all 0.3s linear 0s;background:#a01742;float:left;display:inline;font-size:12px;width:100%;height:57px;color:#fff;text-align:center;margin-top:2px;}
+.fixed_swt ul li.fixed_swt_num a{background:#3590bf;}
+.fixed_swt ul li.weixin a{background:#2378a3;}
+.fixed_swt ul li.weixin01 a{background:#2378a3;}
+.index_swt{background:#777777;}
+.fixed_swt ul li.top a{background:#323148;}
+
+.fixed_swt ul li a:hover,.fixed_swt ul li.hover a{background:#3590bf;text-decoration:none;color:#fff;}
+.fixed_swt ul li.top a{background:#262626;}
+.fixed_swt ul li.weixin span{display:none;position:absolute;left:-163px;top:-50px;width:162px;height:162px;background:url(../images/dingyuehao.jpg) no-repeat;background-size:100%;}
+.fixed_swt ul li.weixin01 span{display:none;left:-163px;top:-50px;width:162px;height:162px;background:url(../images/dingyuehao.jpg) no-repeat;background-size:100%;}
+.fixed_swt ul li.fixed_swt_num em{position:absolute;right: 6px;top: 5px;}
+.fixed_swt ul li a i{float:left;display:inline;width:100%;height:38px;background:url(../images/ico.png) no-repeat;}
+.fixed_swt ul li a i.ico_1{background-position: -1140px -170px;}
+.fixed_swt ul li a i.ico_2{background-position:-1095px -176px;}
+.fixed_swt ul li a i.ico_3{background-position:-1038px -175px;}
+.fixed_swt ul li a i.ico_4{background-position:-981px -175px;}
+.fixed_swt ul li a i.ico_5{background-position:-913px -170px;}
+.fixed_swt ul li a i.ico_6{background-position:-857px -171px;}
+.fixed_swt ul li a i.ico_7{background-position:-798px -172px;}
+

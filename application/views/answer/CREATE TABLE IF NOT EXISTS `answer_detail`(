@@ -1,0 +1,51 @@
+CREATE TABLE product_detail(
+   product_id INT UNSIGNED AUTO_INCREMENT,
+   create_time DATE NOT NULL,
+   product_title VARCHAR(100) NOT NULL,
+   product_content TEXT NOT NULL,   
+   PRIMARY KEY ( product_id )
+)ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+
+CREATE TABLE product(
+   product_id INT UNSIGNED AUTO_INCREMENT,
+   create_time DATE NOT NULL,
+   product_title VARCHAR(100) NOT NULL,
+   product_content TEXT NOT NULL,   
+   PRIMARY KEY ( product_id )
+)ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+
+
+INSERT INTO product_detail ( create_time, product_title,product_content )
+                       VALUES
+                       ( '2017-06-11', '产品标题3', '产品内容3' );
+
+
+
+
+CREATE TABLE  customer_info(
+   id INT UNSIGNED AUTO_INCREMENT,
+   create_time DATE NOT NULL,
+   phone VARCHAR(20) NOT NULL,
+   min VARCHAR(20) NOT NULL,
+   email VARCHAR(200) NOT NULL,
+   message TEXT,
+   PRIMARY KEY ( id )
+)ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+
+CREATE TABLE news(
+   news_id INT UNSIGNED AUTO_INCREMENT,
+   news_image_url VARCHAR(40) NOT NULL,
+   create_time DATE NOT NULL,
+   news_title VARCHAR(100) NOT NULL,
+   news_content TEXT NOT NULL,   
+   PRIMARY KEY ( news_id )
+)ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+
+INSERT INTO news ( news_image_url, create_time,news_title,  news_content)
+                       VALUES
+                       ('http://www.kohana_local.com/htdocs/images/1-1F60GP054T9.jpg', '2017-06-11', '新闻标题2', '新闻内容2' );
+

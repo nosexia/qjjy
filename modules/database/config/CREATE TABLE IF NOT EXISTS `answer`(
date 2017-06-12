@@ -1,0 +1,21 @@
+CREATE TABLE IF NOT EXISTS `answer`(
+   `runoob_id` INT UNSIGNED AUTO_INCREMENT,
+   `runoob_title` VARCHAR(100) NOT NULL,
+   `runoob_author` VARCHAR(40) NOT NULL,
+   `submission_date` DATE,
+   PRIMARY KEY ( `runoob_id` )
+)ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+
+
+CREATE TABLE IF NOT EXISTS `answer`(
+   `answer_id` INT UNSIGNED AUTO_INCREMENT,
+   `answer_title` VARCHAR(100) NOT NULL,
+   `answer_brief` VARCHAR(100) NOT NULL,
+   `create_time` VARCHAR(100) NOT NULL,
+   `image_url` VARCHAR(100) NOT NULL,
+   PRIMARY KEY ( `answer_id` )
+   )ENGINE=InnoDB DEFAULT CHARSET=utf8
+
+
+   Mysql>insert into worker values(‘answer_title’,’title’),(‘answer_brief’,’内容简介’),(‘create_time’,’2016-1-1’),(‘image_url’,’http://www.qjjy.com.cn/uploads/allimg/170527/1-1F52G615570-L.jpg’);
